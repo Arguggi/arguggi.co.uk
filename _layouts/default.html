@@ -13,13 +13,17 @@
       </div>
     </div>
 
-    {% if page.comments %}
-    {% include comments.html %}
+    {% if site.production %}
+      {% if page.comments %}
+        {% include comments.html %}
+      {% endif %}
     {% endif %}
 
-    {% include footer.html %}
+      {% include footer.html %}
 
-    {% include piwik.html %}
+    {% if site.production %}
+      {% include piwik.html %}
+    {% endif %}
 
   </body>
 
