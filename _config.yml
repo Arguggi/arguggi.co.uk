@@ -10,4 +10,4 @@ github_username:  arguggi
 # Build settings
 markdown: kramdown
 
-permalink: /:title
+permalink: /blog/:title
