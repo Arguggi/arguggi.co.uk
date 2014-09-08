@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Archive
+permalink: /archive/
 ---
 
-My gpg [key]({{site.url}}/arguggi@arguggi.co.uk.key "PGP key").
+Page of all the archives
