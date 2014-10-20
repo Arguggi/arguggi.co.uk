@@ -19,3 +19,5 @@ Monday 2014/10/20, `pacman -Qqs | wc -l` says 1176.
 Of the 1176 pkgs, 28 are from the AUR ( Given by `pacman -Qqm | wc -l` ).
 
 I usually `pacman -Syu` (update all pkgs) every day.
+
+You can find a simple table listing all the problems [here]( /blog/list.html ).
