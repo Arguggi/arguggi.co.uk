@@ -1,0 +1,24 @@
+---
+title: "Arch"
+layout: default
+---
+<h2> List of problems </h2>
+Details <a href="/blog/I-Just-Want-It-To-Work/">here</a>
+<div class="error-table">
+<table>
+  <tr>
+    <td> Date  </td>
+    <td> Packages Affected  </td>
+    <td> Time Estimate (Minutes) </td>
+  </tr>
+  {% for post in site.posts %}
+  {% if post.error %}
+  <tr>
+    <td> <a href="{{post.url | prepend: site.baseurl }}"> {{ post.date | date: "%Y-%m-%d" }} </a>  </td>
+    <td> {{ post.pkg }}  </td>
+    <td> {{ post.time }} </td>
+  <tr>
+  {% endif  %}
+  {% endfor %}
+</table>
+</div>
