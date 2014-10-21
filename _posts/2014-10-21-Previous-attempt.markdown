@@ -13,7 +13,7 @@ For background see this [post]( /blog{% post_url 2014-10-20-I-Just-Want-It-To-Wo
 TL,DR: I'm keeping a log of all arch related problems
 
 I had already attempted something of this sort, more or less 1 year ago.
-This initial log goes on for about 40 days, from 2014-10-05 to 2014-11-15.
+This initial log goes on for about 40 days, from 2013-10-05 to 2013-11-15.
 During this time period the following problems were logged:
 
 - 2013-10-05 `slim` changed xsession
