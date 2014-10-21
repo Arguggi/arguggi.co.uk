@@ -17,8 +17,13 @@ Details <a href="/blog/I-Just-Want-It-To-Work/">here</a>
     <td> <a href="{{post.url | prepend: site.baseurl }}"> {{ post.date | date: "%Y-%m-%d" }} </a>  </td>
     <td> {{ post.pkg }}  </td>
     <td> {{ post.time }} </td>
-  <tr>
+  </tr>
   {% endif  %}
   {% endfor %}
+  <tr class="last-row">
+    <td></td>
+    <td>Total Time</td>
+    <td>{% sum %}</td>
+  </tr>
 </table>
 </div>
