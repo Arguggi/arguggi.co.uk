@@ -15,7 +15,7 @@ has to be fixed and an approximate estimate on the time spent fixing it.
 
 Every hiccup encountered in the normal day to day use will be included in the list.
 I'm not going to include a list of all the packages I have installed, but as of today,
-Monday 2014/10/20, `pacman -Qqs | wc -l` says 1176.
+Monday 2014-10-20, `pacman -Qqs | wc -l` says 1176.
 Of the 1176 pkgs, 28 are from the AUR ( Given by `pacman -Qqm | wc -l` ).
 
 I usually `pacman -Syu` (update all pkgs) every day.
