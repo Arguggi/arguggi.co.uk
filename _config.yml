@@ -1,11 +1,11 @@
 # Site settings
-title: Arguggi
-email: arguggi@arguggi.co.uk
+title: "Arguggi"
+email: "arguggi@arguggi.co.uk"
 description: > # this means to ignore newlines until "baseurl:"
   Wut?
 baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://arguggi.co.uk" # the base hostname & protocol for your site
-github_username:  arguggi
+github_username:  "arguggi"
 
 permalink: /:title
 
@@ -15,3 +15,6 @@ production: False
 # Build settings
 markdown: kramdown
 
+author:
+  name : "Arguggi"
+  email: "arguggi@arguggi.co.uk"
