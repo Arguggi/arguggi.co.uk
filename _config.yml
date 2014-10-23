@@ -18,3 +18,6 @@ markdown: kramdown
 author:
   name : "Arguggi"
   email: "arguggi@arguggi.co.uk"
+
+atom_feed: "/atom.xml"
+rss_feed: "/rss.xml"
