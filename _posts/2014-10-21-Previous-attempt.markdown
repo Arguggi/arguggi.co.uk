@@ -6,6 +6,8 @@ error: False
 categories: Arguggi
 pkg: "None"
 time: 0
+sitemap:
+  changefreq: never
 
 ---
 

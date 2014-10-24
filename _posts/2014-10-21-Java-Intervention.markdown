@@ -6,6 +6,8 @@ error: True
 categories: Arguggi
 pkg: "Java"
 time: 5
+sitemap:
+  changefreq: never
 
 ---
 

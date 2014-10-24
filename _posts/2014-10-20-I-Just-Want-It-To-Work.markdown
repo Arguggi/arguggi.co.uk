@@ -4,6 +4,8 @@ title:  "I just want it to work"
 date:   2014-10-20 10:00:00
 error: False
 categories: Arguggi
+sitemap:
+  changefreq: never
 
 ---
 

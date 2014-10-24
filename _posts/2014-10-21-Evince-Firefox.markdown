@@ -6,6 +6,8 @@ error: True
 categories: Arguggi
 pkg: "Evince Firefox"
 time: 60
+sitemap:
+  changefreq: never
 
 ---
 
