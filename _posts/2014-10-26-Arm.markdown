@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Arm"
+date:   2014-10-26 06:00:00
+error: True
+categories: Arguggi
+pkg: "Arm"
+time: 2
+sitemap:
+  changefreq: never
+
+---
+
+The [arm][arm] pkg was just added to the Community repository and while
+updating errors about conflicting files popped up.
+
+Removing the /usr/share/arm directory fixed the problem.
+
+[arm]: https://www.archlinux.org/packages/community/any/arm/
