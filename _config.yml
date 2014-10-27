@@ -7,7 +7,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "https://arguggi.co.uk" # the base hostname & protocol for your site
 github_username:  "arguggi"
 
-permalink: /:title
+permalink: /:title/
 
 # When testing in local setting do not add comments or tracking
 production: False
