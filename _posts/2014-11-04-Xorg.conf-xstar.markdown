@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "X-STAR DP2710 Xorg.conf"
+date:   2014-11-04 10:00:00
+error: True
+categories: Arguggi
+pkg: "Nvidia"
+time: 0
+sitemap:
+  changefreq: never
+
+---
+
+For some reason the [X-STAR DP2710][X-STAR] monitor doesn't have a valid [EDID][EDID]. If no `/etc/X11/xorg.conf`
+is present when starting up X using the nvidia driver the screen will just start cycling though RGB and B/W screens.
+
+I finally managed to make it work with these options in the `/etc/X11/xorg.conf` file:
+
+{% highlight bash %}
+Section "Monitor"
+  Identifier     "xstar"
+  Option         "DPI" "109 x 109"
+  HorizSync       88.8
+  VertRefresh     59.5
+  Modeline       "2560x1440_60" 312.25 2560 2752 3024 3488 1440 1443 1448 1493 -hsync +vsync
+EndSection
+
+Section "Device"
+  Identifier     "Device0"
+  Driver         "nvidia"
+EndSection
+
+Section "Screen"
+  Identifier     "Screen0"
+  Device         "Device0"
+  Monitor        "xstar"
+  Option	 "ModeValidation" "DFP-0: AllowNonEdidModes"
+  Option 	 "UseEDID" "False"
+  Option 	 "UseEDIDDPI" "False"
+
+  SubSection "Display"
+    Modes  "2560x1440_60"
+  EndSubSection
+
+EndSection
+{% endhighlight %}
+
+#Nvidia Driver
+
+When using the nvidia driver the critcal option is:
+{% highlight bash %}
+"ModeValidation" "DFP-0: AllowNonEdidModes"
+{% endhighlight %}
+Without that X will not use the modeline specified with `Modes` in the `Display` SubSection.
+
+[EDID]: http://en.wikipedia.org/wiki/Extended_display_identification_data
+[X-STAR]: http://www.amazon.com/xstar-dp2710-led-27-2560x1440-qhd-samsung-pls-ls-ips-panel-glossy-screen-dvidual-pc-monitor-perfect-pixel/dp/B00CI2EJAU/
