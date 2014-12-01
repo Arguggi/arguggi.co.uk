@@ -11,14 +11,14 @@ sitemap:
 
 ---
 
-To avoid having to enter my ssh and gpg passphrases every time I start the keychain
+To avoid having to enter my ssh and gpg passphrases every time, I start a keychain
 by adding this to the .zshrc
 
 {% highlight bash %}
 eval `keychain ssh --eval --nogui -Q -q myusername`
 {% endhighlight %}
 
-Today for some unknown reason this error started popping every time I opened a terminal:
+Today for some unknown reason this error started popping up every time I opened a terminal:
 {% highlight bash %}
  * Error: Failed to start gpg-agent
 {% endhighlight %}
