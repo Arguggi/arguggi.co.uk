@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Mpv Audio"
+date:   2015-03-03 12:00:00
+error: True
+categories: Arguggi
+pkg: "mpv"
+time: 5
+sitemap:
+  changefreq: never
+
+---
+
+With certain files mpv doesn't properly play all the audio channels, adding `--audio-channels=2`
+fixes the problem.
