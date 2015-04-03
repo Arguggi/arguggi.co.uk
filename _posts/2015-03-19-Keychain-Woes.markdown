@@ -11,7 +11,7 @@ sitemap:
 
 ---
 
-After updating every time I open a terminal zsh keychain complains:
+After updating every time I open a zsh keychain complains:
 
 {% highlight haskell %}
 * Warning: Can't determine fingerprint from the following line, falling back to filename
